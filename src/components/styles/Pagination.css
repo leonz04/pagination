@@ -1,0 +1,26 @@
+.container__pagination{
+    display: flex;
+    justify-content: center;
+}
+
+.list__pagination{
+    list-style-type: none;
+    display: flex;
+    column-gap:1em;
+    width: 50%;
+    flex-wrap: wrap;
+}
+.item__pagination{
+    padding: 0.5em 1em;
+    background-color: aliceblue;
+    cursor: pointer;
+}
+
+.content__pagination{
+    text-decoration: none;
+
+}
+
+.btn__page__active{
+    background-color: red;
+}
