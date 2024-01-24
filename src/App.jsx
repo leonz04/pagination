@@ -25,9 +25,11 @@ function App() {
   const indexOfFirstPost = indexOfLastPost -limitPerPage;
   const currentInfo = info.slice(indexOfFirstPost, indexOfLastPost);
 
+
   //On change Page
+  const totalPages =Math.ceil(info.length / limitPerPage)
+
   const paginate=(pageNumber)=>{
-    const totalPages =Math.ceil(info.length / limitPerPage)
    
     if(pageNumber>=totalPages) {
       setCurrentPage(totalPages)
@@ -55,6 +57,7 @@ function App() {
         totalInfo={info.length} 
         paginate={paginate}
         currentPage={currentPage}
+        totalPages={totalPages}
         />
         
         

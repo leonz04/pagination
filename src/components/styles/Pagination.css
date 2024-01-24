@@ -6,21 +6,38 @@
 .list__pagination{
     list-style-type: none;
     display: flex;
-    column-gap:1em;
     width: 50%;
     flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    column-gap: 0.3em;
 }
 .item__pagination{
     padding: 0.5em 1em;
     background-color: aliceblue;
     cursor: pointer;
+    font-size: 1.3rem;
+
 }
 
 .content__pagination{
     text-decoration: none;
-
+    
 }
 
 .btn__page__active{
     background-color: red;
+}
+
+
+
+.points{
+display: flex;
+align-items: end;
+font-size: 1.3rem;
+}
+.disapear{
+    display: none;
+    font-size: 0;
 }
